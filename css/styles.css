@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,29 +11,48 @@ body {
 }
 
 header section {
+    padding: 16px 0px;
+    background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
-    padding: 16px;
-    background-color: seashell;
 }
 
 section div h1 {
     color: rgb(0, 0, 0);
-    font-size: 32px;
+    font-size: large;
     margin-left: 12px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+section div:last-child {
+    text-align: right;
 }
 
 section div a {
-    font-size: 32px;
+    font-size: large;
     text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 section div a + a {
-    margin-left: 12px;
+    margin: 12px;
+}
+
+section div a + a {
+    margin: 12px;
 }
 
 section div a.login, section div a.register {
-    padding: 12px;
-    border: solid;
+    padding: 8px;
+    border-radius: 8%;
+    color: white;
+}
+
+section div a.login {
+    background-color: green;
+}
+
+section div a.register {
+    background-color: blueviolet;
 }
